@@ -1,1 +1,18 @@
- 
+ html,body,#wrapper{
+     margin: 0px;
+     height: 100%;
+     width: 100%;
+ }
+
+ header img{
+     height: 60px;
+     width: 60px;
+ }
+ .cityimg{
+     height: 150px;
+    width: 150px;
+ }
+ .socialimg{
+     height: 20px;
+     width: 22px;
+ }

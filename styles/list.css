@@ -1,5 +1,25 @@
-  p{
+ html,body{
+   height: 100%;
+  width: 100%;
+ }
+ #wrapper{
+  height: 100%;
+ width: 100%;
+}
+header img{
+  height: 60px;
+  width: 60px;
+}
+.cityimg{
+  height: 150px;
+  width: 150px;
+}
+ p{
       margin:0px;
       padding: 0px;
   }
+.socialimg{
+  width:22px ;
+  height: 20px;
+}
   

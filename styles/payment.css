@@ -1,3 +1,23 @@
+html,body{
+    height: 100%;
+   width: 100%;
+  }
+  #wrapper{
+   height: 100%;
+  width: 100%;
+ }
+ header img{
+   height: 60px;
+   width: 60px;
+ }
+ .socialimg{
+    width:22px ;
+    height: 20px;
+  }
+  .radisonimg{
+    height: 500px;
+    width: 500px;
+}
 .bold{
     font-weight: bold;
 }

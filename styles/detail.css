@@ -1,11 +1,20 @@
 html,body{
     height: 100%;
-   width: 100%;
+    width: 100%;
+   margin: 0px;
+   background-color: #e0e0e0;
   }
   #wrapper{
    height: 100%;
-  width: 100%;
+   width: 100%;
+   margin: 0px;;
  }
+ header{
+  background-color: rosybrown;
+}
+footer{
+ background-color: rosybrown;
+}
  header img{
     height: 60px;
     width: 60px;
@@ -13,6 +22,13 @@ html,body{
 .radisonimg{
     height: 500px;
     width: 500px;
+    margin: 2% 4% 0% 4%;
+}
+.frm{
+  margin: 0% 4% 1% 4%;
+}
+.desc{
+  margin: 1% 4% 2% 4%;
 }
 p{
     margin:0px;

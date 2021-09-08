@@ -1,11 +1,20 @@
 html,body{
     height: 100%;
    width: 100%;
+   margin: 0px;
+   background-color: #e0e0e0;
   }
   #wrapper{
    height: 100%;
   width: 100%;
+  margin: 0px;
  }
+ header{
+  background-color: rosybrown;
+}
+footer{
+ background-color: rosybrown;
+}
  header img{
    height: 60px;
    width: 60px;
@@ -13,6 +22,22 @@ html,body{
  .socialimg{
     width:22px ;
     height: 20px;
+  }
+  .address{
+    background-color: rgb(132,136,139);
+    width: 50%;
+    height: 20%;
+    margin:2% auto;
+  }
+  .contactDetails{
+    
+    margin: 2%;
+  }
+  .pay{
+    margin: 2%;
+    border:1px solid black;
+    border-radius: 5px;
+    padding:1% 2%;
   }
   .radisonimg{
     height: 500px;

@@ -2,7 +2,29 @@
      margin: 0px;
      height: 100%;
      width: 100%;
+     background-color: #e0e0e0;
  }
+ header{
+     background-color: rosybrown;
+ }
+ footer{
+    background-color: rosybrown;
+}
+.search{
+    background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
+    height: 380px;
+    width: 100wh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+}
+
+#img{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 
  header img{
      height: 60px;
@@ -11,6 +33,8 @@
  .cityimg{
      height: 150px;
     width: 150px;
+     padding:4%;
+     border-radius: 25%;
  }
  .socialimg{
      height: 20px;

@@ -4,6 +4,7 @@
    margin: 0px;
    background-color: #e0e0e0;
  }
+
  #wrapper{
   height: 100%;
   width: 100%;
@@ -11,29 +12,123 @@
 }
 header{
   background-color: rosybrown;
+  width: 100%;
+  height: 9%;
+  margin: 0px;
+  position: sticky;
+  top: 0px;
+  }
+  
+  header a{
+     padding: 5px;
+     text-decoration: none;
+       color: black;
+       margin: 10px;
+     
+  }
+
+  header img{
+     height: 60px;
+     width: 60px;
+     float: left;
+     
+ }
+ 
+ .login{
+     float: right;
+     
+     position: relative;
+     top: 5px;
+     
+ }
+ ul {
+  display: inline-block;
+  margin: 0px;
+  width: 300px;
 }
-footer{
- background-color: rosybrown;
+
+
+ul li{
+  display: inline-block;
+  margin:10px;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+ 
 }
-header img{
-  height: 60px;
-  width: 60px;
+#content1{
+  text-align: center;
+
 }
+
 .hotel{
-  margin: 2%;
+  margin: 4%;
   background-color: rgb(132,136,139);
   width: 40%;
+  display: inline-block; 
+
+
+}
+#hotel3{
+  margin-bottom: 100px;
+}
+#content3{
+  display: none;
+}
+
+h3,p,a {
+  color: black;
+  text-decoration: none;
 }
 .cityimg{
   height: 150px;
   width: 150px;
 }
- p{
-      margin:0px;
-      padding: 0px;
-  }
-.socialimg{
-  width:22px ;
-  height: 20px;
-}
+ 
+  footer{
+    background-color: rosybrown;
+    width: 100%;
+    height: 9%;
+    margin: 0%;
+     position: fixed;
+     bottom: 0px;
+    }
+    .contact{
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    margin-left: 10px;
+   }
+
+   #copy{
+     
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    left: 45%;
+    margin: auto;
+    top: 35px;
+    font-size: 10px;
+    }
+    footer a{
+     text-decoration: none;
+     color: black;
+     
+     }
+    #social{
+     float: right;
+     margin-right: 10px;
+     display: inline-block;
+     position: relative;
+     top: 20px;
+
+    }
+ 
+
+ .socialimg{
+     height: 20px;
+     width: 22px;
+
+ }
   

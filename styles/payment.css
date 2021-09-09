@@ -1,4 +1,5 @@
-html,body{
+
+ html,body{
     height: 100%;
    width: 100%;
    margin: 0px;
@@ -11,27 +12,51 @@ html,body{
  }
  header{
   background-color: rosybrown;
-}
-footer{
- background-color: rosybrown;
-}
- header img{
-   height: 60px;
-   width: 60px;
- }
- .socialimg{
-    width:22px ;
-    height: 20px;
+  width: 100%;
+  height: 9%;
+  margin: 0px;
+  position: sticky;
+  top: 0px;
   }
-  .address{
+  
+  header a{
+     padding: 5px;
+     text-decoration: none;
+       color: black;
+       margin: 10px;
+     
+  }
+
+  header img{
+     height: 60px;
+     width: 60px;
+     float: left;
+     
+ }
+ .login{
+  float: right;
+  
+  position: relative;
+  top: 5px;
+  
+}
+
+.address{
     background-color: rgb(132,136,139);
     width: 50%;
     height: 20%;
     margin:2% auto;
   }
+
   .contactDetails{
     
     margin: 2%;
+  }
+  .paynow{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 100px;
   }
   .pay{
     margin: 2%;
@@ -45,4 +70,49 @@ footer{
 }
 .bold{
     font-weight: bold;
+}
+footer{
+  background-color: rosybrown;
+  width: 100%;
+  height: 9%;
+  margin: 0%;
+   position: fixed;
+   bottom: 0px;
+  }
+  .contact{
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  margin-left: 10px;
+ }
+
+ #copy{
+   
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  left: 45%;
+  margin: auto;
+  top: 35px;
+  font-size: 10px;
+  }
+  footer a{
+   text-decoration: none;
+   color: black;
+   
+   }
+  #social{
+   float: right;
+   margin-right: 10px;
+   display: inline-block;
+   position: relative;
+   top: 20px;
+
+  }
+
+
+.socialimg{
+   height: 20px;
+   width: 22px;
+
 }

@@ -17,42 +17,51 @@
 <body>
     <div id="wrapper">
         <header>
-            <a href="index.html"><img src="assests/images/logo.png" width="150px" height="100px" alt="logo" ></a>
+            <a id="logo" href="index.html"><img src="assests/images/logo.png" width="150px" height="100px" alt="logo" ></a>
             <a class ="login" href="login.html" target="_self">Login</a>
         </header>
     <section id="content">
         <div id="content1">
-            <img class="radisonimg"  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" >
-            <br>
+            <div class="image">
+                <img class="radisonimg"  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" >
+            </div>
             <div class="frm">
                 <form action="payment.html" method="GET">
-                    <label for="adults" >Adults</label>
-                    <input type="number" min="1" name="adults" required>
-                    <br>
-                    <label for="Name">Name:</label>
-                    <input type="text" name="Name" required autocomplete="off" >
-                    <br>
-                    <label for="date1">From Date:</label>
-                    <input type="date" name="date1" required>
-                    <br>
-                    <label for="date2">To Date</label>
-                    <input type="date" name="date2" required >
-                    <br>
-                    <label for="total">Total:</label>
-                    <input type="text" name="total" disabled >
-                    <br>
+                     <div class="pair">
+                         <div class="label"> <label for="adults" >Adults</label></div>
+                          <div class="input"><input type="number" min="1" name="adults" required></div>
+                     </div>
+                    <div class="pair ">
+                        <div class="label"><label for="Name">Name:</label></div>
+                       <div class="input"><input type="text" name="Name" required autocomplete="off" ></div>
+                    </div>
+                    <div class="pair ">
+                        <div class="label"><label for="date1">From Date:</label></div>
+                    <div class="input"><input type="date" name="date1" style="width :190px" required></div>
+                    </div>
+                    <div class="pair ">
+                    <div class="label"><label for="date2">To Date</label></div>
+                    <div class="input"><input type="date" name="date2" style="width :190px" required ></div>
+                    </div>
+                    <div class="pair ">
+                    <div class="label"><label for="total">Total:</label></div>
+                    <div class="input"><input type="text" name="total" disabled ></div>
+                     </div>
+                     <br>
+                     <div class="pair ">
                     <button type="submit" >Book Now</button>
-
+                    </div>
                 </form>
             </div>
-            <div class="desc">
+        </div>
+         <div class="desc">
              <h2>Radison Blu Hotel </h2>
              
-            <p>RATING</p>
-            <br>
+            <h3>RATING</h3>
+            
             <p>5 Star</p>
-                 <br>
-            <p>AMENITIES</p>
+                
+            <h3>AMENITIES</h3>
             <ul>
                 <li>Room service</li>
                 <li>Restaurant</li>
@@ -60,12 +69,12 @@
                 <li>Fitness center</li>
                 <li>Pool</li>
             </ul>
-            <div class= "des">
+             <div class= "des">
              <h3>DESCRIPTION</h3>
              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse enim nostrum dignissimos. Ducimus autem architecto iure culpa exercitationem mollitia numquam velit sapiente! Ipsam modi nobis ullam quibusdam incidunt sequi nemo optio itaque.</p>
-               <br>
-            </div>
-            </div>
+            
+              </div>
+            
         </div>
         
     </section>

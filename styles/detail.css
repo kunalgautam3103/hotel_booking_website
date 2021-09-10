@@ -14,40 +14,81 @@ html,body{
   background-color: rosybrown;
   width: 100%;
   height: 9%;
-  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0px;
   }
   
   header a{
-     padding: 5px;
-     text-decoration: none;
+         padding: 5px;
+        text-decoration: none;
        color: black;
-       margin: 10px;
+       margin: 2%;
      
   }
 
   header img{
+      margin-left: 1%;
      height: 60px;
      width: 60px;
-     float: left;
-     
  }
- .login{
-  float: right;
-  
-  position: relative;
-  top: 5px;
-  
+
+
+#logo{
+margin: 2px;
 }
+
+#content1{
+display: grid;
+grid-template-columns: 3fr 1fr;
+margin: 3%;
+
+
+height: 400px;
+
+}
+.image{
+  
+  border: 1px solid black;
+  align-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
 .radisonimg{
-    height: 500px;
+    height: 350px;
     width: 500px;
-    margin: 2% 4% 0% 4%;
+  
 }
 .frm{
-  margin: 0% 4% 1% 4%;
+  
+  border: 1px solid black;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+
+  
 }
+
+
+}
+.pair{
+  display:flex;
+
+}
+.label{
+  flex-basis: 200px;
+  margin-top: 10%;
+}
+
+
+
 .desc{
   margin: 1% 4% 2% 4%;
 }
@@ -56,44 +97,43 @@ html,body{
   margin:0px;
 
 }
+h3{
+  font-family: cursive;
+}
+
 footer{
   background-color: rosybrown;
   width: 100%;
   height: 9%;
   margin: 0%;
-   position: fixed;
-   bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  bottom: 0px;
   }
   .contact{
-  display: inline-block;
-  position: relative;
-  top: 20px;
-  margin-left: 10px;
+  
+  margin-left: 2%;
+  
+  
  }
 
  #copy{
    
-  display: inline-block;
-  position: absolute;
-  width: 200px;
-  left: 45%;
-  margin: auto;
-  top: 35px;
+  order:2;
   font-size: 10px;
   }
+
   footer a{
    text-decoration: none;
    color: black;
-   
    }
-  #social{
-   float: right;
-   margin-right: 10px;
-   display: inline-block;
-   position: relative;
-   top: 20px;
-
-  }
+  
+   #social{
+   order:3;
+   margin-right:2%; 
+   }
 
 
 .socialimg{

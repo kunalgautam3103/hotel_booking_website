@@ -10,13 +10,13 @@
     justify-content: start;
     align-content: center;
   }
-  .image, .frm {
+  #slideshow-container, .frm {
     padding: 1%;
     text-align: center;
     border: 1px solid black;
     max-height: 400px;
 }
-.image{
+#slideshow-container{
   margin-left: 2% ;
   border-right: none;
   flex-grow: 3;
@@ -27,11 +27,6 @@
   flex-grow: 1;
 }
 
-.radisonimg{
-    height: 350px;
-    width: 500px;
-  
-}
 .outer {
   padding: 3%;
   display: flex;
@@ -51,6 +46,32 @@
   height: 180px;
   margin:0px;
 
+}
+#slideshow-booking {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+}
+.slider-image {
+  max-height: 350px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-image: none;
+}
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: rosybrown;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: rosybrown;
 }
 
 

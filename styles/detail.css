@@ -1,62 +1,30 @@
 
-html,body{
-    height: 100%;
-    width: 100%;
-   margin: 0px;
-   background-color: #e0e0e0;
-  }
-  #wrapper{
-   height: 100%;
-   width: 100%;
-   margin: 0px;;
- }
- header{
-  background-color: rosybrown;
-  width: 100%;
-  height: 9%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0px;
-  }
-  
-  header a{
-         padding: 5px;
-        text-decoration: none;
-       color: black;
-       margin: 2%;
-     
-  }
-
-  header img{
-      margin-left: 1%;
-     height: 60px;
-     width: 60px;
- }
-
-
-#logo{
-margin: 2px;
+ #content{
+  margin-top:8%;
+  margin-bottom: 7%;
 }
 
 #content1{
-display: grid;
-grid-template-columns: 3fr 1fr;
-margin: 3%;
 
-
-height: 400px;
-
+    display: flex;
+    justify-content: start;
+    align-content: center;
+  }
+  .image, .frm {
+    padding: 1%;
+    text-align: center;
+    border: 1px solid black;
+    max-height: 400px;
 }
 .image{
-  
-  border: 1px solid black;
-  align-content:center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
+  margin-left: 2% ;
+  border-right: none;
+  flex-grow: 3;
+  max-width: 60%;
+}
+.frm {
+  margin-right: 2%;
+  flex-grow: 1;
 }
 
 .radisonimg{
@@ -64,81 +32,26 @@ height: 400px;
     width: 500px;
   
 }
-.frm{
-  
-  border: 1px solid black;
-  height: 400px;
+.outer {
+  padding: 3%;
   display: flex;
-  justify-content: center;
-  align-items: stretch;
-
-
-  
+  justify-content: space-between;
 }
-
-
+#book-now {
+  margin-top: 5%;
 }
-.pair{
-  display:flex;
-
+.inner {
+  width: 60%;
 }
-.label{
-  flex-basis: 200px;
-  margin-top: 10%;
-}
-
-
 
 .desc{
-  margin: 1% 4% 2% 4%;
+  margin: 2% 4% 2% 4%;
 }
 .des{
   height: 180px;
   margin:0px;
 
 }
-h3{
-  font-family: cursive;
-}
-
-footer{
-  background-color: rosybrown;
-  width: 100%;
-  height: 9%;
-  margin: 0%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  bottom: 0px;
-  }
-  .contact{
-  
-  margin-left: 2%;
-  
-  
- }
-
- #copy{
-   
-  order:2;
-  font-size: 10px;
-  }
-
-  footer a{
-   text-decoration: none;
-   color: black;
-   }
-  
-   #social{
-   order:3;
-   margin-right:2%; 
-   }
 
 
-.socialimg{
-   height: 20px;
-   width: 22px;
-
-}
 

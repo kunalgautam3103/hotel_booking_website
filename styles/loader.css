@@ -5,6 +5,20 @@
   border-top: 12px solid #444444 ;
   width: 70px;
   height: 70px;
-  margin: 50vh auto;
+  
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 0; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  margin: auto;
 }
+
+
+@keyframes spin { 
+  100% { 
+      transform: rotate(360deg); 
+  } 
+} 
 

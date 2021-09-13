@@ -1,47 +1,44 @@
- html,body{
-   height: 100%;
-   width: 100%;
-   margin: 0px;
-   background-color: #e0e0e0;
- }
-
-     #wrapper{
-     height: 100%;
-     width: 100%;
-     margin: 0px;
-    }
-    header{
-     background-color: rosybrown;
-     width: 100%;
-     height: 9%;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     position: sticky;
-     top: 0px;
-     }
-     
-     header a{
-            padding: 5px;
-           text-decoration: none;
-          color: black;
-          margin: 2%;
-        
-     }
-
-     header img{
-         margin-left: 1%;
-        height: 60px;
-        width: 60px;
-    }
 
 
-#logo{
-  margin: 2px;
+  #container{
+    margin-top:7%;
+    margin-bottom:10%;
+  }
+    
+  .hotel-image-small {
+    height: 200px;
+    width: 250px;
+}
+   .hotel{
+    margin: 4% 5% 0% 5%; 
+    background-color: lightgrey;
+    width: 40%;
+    float: left;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.hotel:hover {
+    background-color: rosybrown;
+}
+.info{
+  margin-left: 5%;
+}
+#list-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 6%;
+}
+#list-map {
+  position: relative;
+  top: 0%;
 }
 
-
-ul li{
+#pills-tab {
+  justify-content: center;
+}
+  ul li{
   display: inline-block;
   margin:10px;
   padding: 10px;
@@ -49,111 +46,17 @@ ul li{
   text-decoration: none;
   color: black;
  
-}
-ul {
+   }
+  ul {
   display: inline-block;
   margin: 0px;
   width: 300px;
-}
-#content1{
-  text-align: center;
-  margin-bottom: 10px;
+   }
   
 
-}
-
-#content2{
-  display: grid;
-  grid-template-columns: auto auto;
-  row-gap: 12%;
-  column-gap: 2%;
-  margin-left: 5%;
-  margin-bottom: 20%;
-
-}
-
-
-.hotel{
-  margin-top: 0%;
-  background-color: lightgray;
-  width: 80%;
-  height: 200px;
-  display: flex; 
-  flex-direction: row;
-  box-sizing: border-box;
-  
-
-
-}
-.hoteldesc{
-  display: inline-block;
-  margin-left: 10px;
-
-}
-#hotel1 {
-  margin: 0px;
-  padding: 0px;
-}
-#hotel1 .hoteldesc{
-  position: relative;
-  margin-top: 0%;
-  bottom:90px;
-}
-#hotel3{
-
-}
-
-#content3{
-  display: none;
-}
-
-h3,p,a {
-  color: black;
-  text-decoration: none;
-}
-.cityimg{
-  height: 100%;
-  width: 200px;
+  .cityimg{
+    height: 200px;
+    width: 250px;
 }
  
-footer{
-  background-color: rosybrown;
-  width: 100%;
-  height: 9%;
-  margin: 0%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  bottom: 0px;
-  }
-  .contact{
-  
-  margin-left: 2%;
-  
-  
- }
-
- #copy{
-   
-  order:2;
-  font-size: 10px;
-  }
-
-  footer a{
-   text-decoration: none;
-   color: black;
-   }
-  
-   #social{
-   order:3;
-   margin-right:2%; 
-   }
-
-
-.socialimg{
-   height: 20px;
-   width: 22px;
-
-}
-  
+ 

@@ -76,7 +76,15 @@
 #content2{
     margin: 5%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+#part1,#part2{
+  margin-bottom: 5%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .img1{
     height: 150px;
@@ -97,6 +105,19 @@
         display: flex;
         justify-content: center;
     
+}
+@media screen and (min-width: 786px) {
+  #content2{
+    display: flex;
+   flex-direction: row;
+}
+}
+
+@media screen and (min-width: 586px) {
+  #content2{
+    display: flex;
+   flex-direction: column;
+}
 }
 
  

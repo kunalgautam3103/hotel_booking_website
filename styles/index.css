@@ -86,6 +86,9 @@
   display: flex;
   justify-content: space-evenly;
 }
+#part2{
+  display: none;
+}
 .img1{
     height: 150px;
     width: 150px;

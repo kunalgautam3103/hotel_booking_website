@@ -85,4 +85,63 @@ a {
 .checked {
     color: orange;
 }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
 
+#loginx {
+    background-color: #fff;
+    padding: 25px;
+    height: auto;
+    width: 700px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    margin: 15% auto;
+    margin-top: 0;
+    
+
+}
+
+#contactus {
+    width: 400px;
+}
+
+#loginx {
+    width: 350px !important;
+    box-sizing: border-box !important;
+    font-size: 1rem !important;
+}
+
+#loginx input {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 10px;
+    font-size: .83rem !important;
+}
+
+
+
+
+.close {
+    top: 0;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    cursor: pointer;
+    color: #000 !important;
+    opacity: .7 !important;
+    font-size: 1rem !important;
+}

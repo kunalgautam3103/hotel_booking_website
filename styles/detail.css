@@ -26,7 +26,9 @@
   margin-right: 2%;
   flex-grow: 1;
 }
-
+#descinfo{
+margin-bottom: 100px;
+}
 .outer {
   padding: 3%;
   display: flex;

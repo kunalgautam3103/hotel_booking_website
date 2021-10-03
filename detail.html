@@ -24,16 +24,9 @@
             <div id="content1">   
                 <div id="slideshow-container">
                     <div id="carousel-controls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="slider-image" class="d-block w-100" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="slider-image" class="d-block w-100" src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="slider-image" class="d-block w-100" src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg" alt="Third slide">
-                            </div>
+                        <div class="carousel-inner" id="cop">
+                            
+                           
                         </div>
                         <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -47,7 +40,7 @@
                 </div>
 
                 <div class="frm">
-                   <form action="payment.html" method="get" autocomplete="off">
+                   
                       <div class="outer">
                         <label for="adult">Adults:</label>
                         <input class="inner" type="number" name="adult" id="adult"  min="1" required/>
@@ -73,15 +66,15 @@
                         <input class="inner" type="text" name="price" id="price" readonly/>
                     </div>
 
-                    <div>
-                        <input type="submit" class="btn btn-outline-success" onclick="f12()" value="Book Now" id="book-now"/>
+                    <div id="but">
+                        <input type="submit" class="btn btn-outline-success"  value="Book Now" id="book-now"/>
                     </div>
-                  </form>
+                  
                  </div>
              </div>
         
          <div class="desc">
-             <h2>Radison Blu Hotel </h2>
+             <h2 id="hotelname">Radison Blu Hotel </h2>
              <h5 class="heading" >RATING</h5>
              <div id="rating">
                 <span class="fa fa-star checked" id="1"></span>
@@ -92,16 +85,10 @@
             </div>
                 
             <h5 class="heading">AMENITIES</h5>
-            <ul></ul>
-                <li>Room service</li>
-                <li>Restaurant</li>
-                <li>Business center</li>
-                <li>Fitness center</li>
-                <li>Pool</li>
-            </ul>
-             <div class= "des ">
-             <h5 class="heading">DESCRIPTION</h5>
-             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse enim nostrum dignissimos. Ducimus autem architecto iure culpa exercitationem mollitia numquam velit sapiente! Ipsam modi nobis ullam quibusdam incidunt sequi nemo optio itaque.</p>
+            <ul id=unorder></ul>
+             <div class= "des">
+             <h5 class="heading" >DESCRIPTION</h5>
+             <p id="descinfo"></p>
             
         </div>
             

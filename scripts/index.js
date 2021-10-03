@@ -20,3 +20,8 @@ function part2hide(){
 
    }
 }
+function redirect(str){
+
+   window.location.href = `list.html?city=${str}`;
+   
+   }

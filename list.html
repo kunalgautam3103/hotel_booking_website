@@ -9,7 +9,14 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="styles/common.css">
    <link rel="stylesheet" href="styles/list.css"> 
-    
+   <link rel="stylesheet" href="styles/loader.css">
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+   
+    <style>
+      #map{
+        height: 50em;
+      }
+    </style>
   </head>
   <body>
     <div id="wrapper">
@@ -21,7 +28,7 @@
                   <a class="nav-link active" data-toggle="pill"  href="#home" >List View</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-toggle="pill" href="#map" >Map View</a>
+                  <a class="nav-link" data-toggle="pill" href="#map1" >Map View</a>
                 </li>
                 
             </ul>
@@ -32,10 +39,10 @@
                    
                 </div>
                 
-                <div class="tab-pane" id="map">
+                <div class="tab-pane" id="map1">
                     
-                    <div >
-                        <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
+                    <div id="map" >
+                       
                     </div>  
                 </div>
             </div>
@@ -49,6 +56,11 @@
         <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-label" aria-hidden="true"></div>
         <script src="scripts/common.js"></script>
         <script src="scripts/list.js"></script>
-    
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-HqdJsS0XpgqWqforUpENUIF_SwCP5NQ&callback=initMap&v=weekly"
+      async
+    ></script>
+    </div>
+    <div id="loader"></div>
   </body>
 </html>

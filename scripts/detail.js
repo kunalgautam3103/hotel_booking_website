@@ -1,15 +1,18 @@
-let params = window.location.href.split("?")[1];  //recipe=dalfry
+
+let params = window.location.href.split("?")[1];  
 let cityName = decodeURI(params.split("=")[1]); 
-console.log(cityName);
+
 
 const data = null;
 
 const xhr = new XMLHttpRequest();
 xhr.withCredentials = false;
+document.getElementById("wrapper").style.display="none";
 
 xhr.addEventListener("readystatechange", function () {
 	if (this.readyState === this.DONE) {
-		console.log(this.responseText);
+       
+		//console.log(this.responseText);
         var arr=JSON.parse(this.responseText).data[0];
         addContent(arr);
 	}
@@ -17,7 +20,7 @@ xhr.addEventListener("readystatechange", function () {
 
 xhr.open("GET", `https://travel-advisor.p.rapidapi.com/hotels/get-details?location_id=${cityName}`);
 xhr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
-xhr.setRequestHeader("x-rapidapi-key", "98b4ff8ae0msh6b13aa5a3a61a5dp1b8761jsn39d9dcf4a256");
+xhr.setRequestHeader("x-rapidapi-key", "d699213266msh1848c1d57c9f7dep1211bdjsn5f3c24e2a206");
 
 xhr.send(data);
 
@@ -25,13 +28,18 @@ const data1 = null;
 
 const xhr1 = new XMLHttpRequest();
 xhr1.withCredentials = false;
-
+xhr1.addEventListener("progress", function(){
+    document.getElementById("wrapper").style.display="none";
+    
+    });
 xhr1.addEventListener("readystatechange", function () {
 	if (this.readyState === this.DONE) {
-		console.log(this.responseText);
+        document.getElementById("wrapper").style.display="block";
+        document.getElementById("loader").style.display="none";
+		
         var arr1=JSON.parse(this.responseText).data;
         var cor1=`<div class="carousel-item active">
-        <img class="slider-image" id="img1" class="d-block w-100" src="${arr1[0].images.original.url}" alt="First slide">
+        <img class="slider-image" id="img1" class="d-block w-100" src="${arr1[0].images.large.url}" alt="First slide" >
     </div>`
     document.getElementById("cop").innerHTML+=cor1;
         for(var i=1; i<10; i++){
@@ -40,9 +48,9 @@ xhr1.addEventListener("readystatechange", function () {
 	}
 });
 
-xhr1.open("GET", "https://travel-advisor.p.rapidapi.com/photos/list?location_id=2233968");
+xhr1.open("GET", `https://travel-advisor.p.rapidapi.com/photos/list?location_id=${cityName}`);
 xhr1.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
-xhr1.setRequestHeader("x-rapidapi-key", "98b4ff8ae0msh6b13aa5a3a61a5dp1b8761jsn39d9dcf4a256");
+xhr1.setRequestHeader("x-rapidapi-key", "d699213266msh1848c1d57c9f7dep1211bdjsn5f3c24e2a206");
 
 xhr1.send(data);
 
@@ -99,12 +107,8 @@ refprice.innerText=total;
 document.getElementById("book-now").addEventListener("click", function() {
     window.location.href = `payment.html?hotel=${cityName}`;
   });
-//document.getElementById("but").setAttribute("onclick", directtopay(cityName));
-function directtopay(cityName1){
-    
-   // window.location.href = `payment.html?hotel=${cityName1}`;
-   // console.log(dff);
-}
+
+
 function myFunction() {
     
     var date1=document.getElementById("fromDate").value;

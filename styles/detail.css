@@ -67,13 +67,13 @@ margin-bottom: 100px;
 {
   content: '>';
   font-size: 55px;
-  color: rosybrown;
+  color: black;
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 55px;
-  color: rosybrown;
+  color: black;
 }
 
 
